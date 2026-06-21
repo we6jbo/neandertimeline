@@ -1,0 +1,54 @@
+{
+  "project_name": "NeanderTimeline Modular Living Project",
+  "owner": "we6jbo",
+  "purpose": "A living Tk timeline viewer for Jeremiah O'Neal's 23andMe Neanderthal result, family tree regions, map coordinates, graphics, and TG reference marks.",
+  "critical_safeguards": {
+    "do_not_overwrite_main_app": true,
+    "do_not_remove_map_canvas": true,
+    "do_not_remove_timeline_controls": true,
+    "do_not_replace_with_button_only_gui": true,
+    "do_not_overwrite_living_state_with_non_scene_data": true,
+    "normal_ai_output_should_be_ai_patch_json_only": true
+  },
+  "installed_application": {
+    "folder": "/opt/neandertimeline_modular",
+    "main_script": "/opt/neandertimeline_modular/neandertimeline_app.py",
+    "modules_folder": "/opt/neandertimeline_modular/neandertimeline_modules",
+    "config": "/opt/neandertimeline_modular/config.json",
+    "launcher": "/home/we6jbo/.local/bin/neandertimeline"
+  },
+  "living_state": {
+    "folder": "~/.neanderthal_23andme_2026/living_timeline",
+    "state_file": "~/.neanderthal_23andme_2026/living_timeline/living_timeline_state.json",
+    "ai_request_package": "~/.neanderthal_23andme_2026/living_timeline/ai_request_package.json",
+    "ai_patch_file": "~/.neanderthal_23andme_2026/living_timeline/ai_patch.json",
+    "google_ai_prompt_file": "~/.neanderthal_23andme_2026/living_timeline/google_ai_prompt.txt",
+    "versions_folder": "~/.neanderthal_23andme_2026/living_timeline/versions",
+    "backups_folder": "~/.neanderthal_23andme_2026/living_timeline/backups"
+  },
+  "source_data": {
+    "click_coordinates": "~/.neanderthal_23andme_2026/neanderthal_click_capture.json",
+    "genealogy_tg_json": "~/.neanderthal_23andme_2026/genealogy_tg_associations.json",
+    "genealogy_tg_csv": "~/.neanderthal_23andme_2026/genealogy_tg_associations.csv",
+    "graphics_folder": "./sample_assets"
+  },
+  "safe_ai_patch_schema": {
+    "summary": "string",
+    "notes": "string optional",
+    "scenes": [
+      {
+        "id": "scene id",
+        "year": "time label",
+        "title": "scene title",
+        "map": "/home/we6jbo/...png",
+        "image": "/home/we6jbo/...png",
+        "point_labels": [],
+        "route_labels": [],
+        "text": [],
+        "people_lines": [],
+        "tags": []
+      }
+    ]
+  }
+}
+
